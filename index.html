@@ -1,0 +1,94 @@
+<html>
+
+<head>
+    <!-- jquery for enter key press -->
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+    <title>ChatBot</title>
+</head>
+
+<body>
+    <div class="sticky">
+        Developed By : Micro Dynamic Group
+    </div>
+    <div class="cards-list">
+        <div class="feat1">Nitish Kumar</div>
+        <div class="feat1">Gopichand</div>
+        <div class="feat1">Nikhil </div>
+        <div class="feat1">Mohd Roshan</div>
+    </div>
+    <div class="head">
+        <div class="content">
+            <div> Virtual Guide <br> <b>AI Chatbot </b> <br>Version <b>2.0</b> </div>
+        </div>
+        <div class="content-image">
+            <img src="chatbot-marketing.gif" alt="img" width="550px">
+        </div>
+    </div>
+
+
+    <div class="head head2">
+        <div class="content">
+            <div>Now Consult Doctors Online</div>
+        </div>
+        <div class="content-image">
+            <video controls loop src="doctor-video.mp4" autoplay muted width="900px"></video>
+        </div>
+    </div>
+    <div class="main">
+        <div id="output"></div>
+        <div class="button-group">
+
+            <button class="btn" onclick="covid()" id="but1">
+                <h1>COVID vaccine information</h1>
+            </button><br>
+            <button class="btn" onclick="change()" id="but2">
+                <h1>Find a perfect doctor</h1>
+            </button>
+
+            <button class="btn b" id="but3">
+                <h1> <a href="fever.html" target="_blank" onclick="doct()">Fever</a></h1>
+            </button>
+            <button class="btn b" id="but4">
+                <h1><a onclick="doct()">Heart problem</a></h1>
+            </button>
+            <button class="btn b" id="but5">
+                <h1><a onclick="doct()">Breating problem</a></h1>
+            </button>
+            <button class="btn b" id="but6">
+                <h1><a onclick="doct()">Skin</a></h1>
+            </button>
+            <button class="btn b" id="but7">
+                <h1><a onclick="doct()">Diabetes/thyroid</a></h1>
+            </button>
+            <button class="btn b" id="but8">
+                <h1><a onclick="doct()">Kidney problem</a></h1>
+            </button>
+            <button class="btn b" id="but9">
+                <h1><a onclick="doct()">Brain problem</a></h1>
+            </button>
+            <button class="btn b" id="but10">
+                <h1><a onclick="doct()">Eye problem</a></h1>
+            </button>
+            <button class="btn b" id="but11">
+                <h1><a onclick="doct()">General health issus</a></h1>
+            </button>
+        <button class="btn b" id="but12">
+                <h1><a href="fever.html" target="_blank" onclick="detail()">Doctor details</a></h1>
+            </button>
+        </div>
+
+        <div id="container">
+            <input type="text" id="input" value="" placeholder="Type here...." autocomplete="off" autofocus="true">
+        </div>
+    </div>
+
+    <div class="thankyou">
+        <h1>Thank You</h1>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.0.0.js"
+        integrity="sha256-jrPLZ+8vDxt2FnE1zvZXCkCcebI/C8Dt5xyaQBjxQIo=" crossorigin="anonymous"></script>
+</body>
+
+</html>

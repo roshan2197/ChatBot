@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  background-color: #c92f2f;
+  font-family: "Lato", sans-serif;
+}
+
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 10px 20px;
+  width: max-content;
+  text-align: center;
+  margin-left: 40%;
+  margin-bottom: 20px;
+  border-radius: 0 0 20px 20px;
+  font-size: 20px;
+}
+
+
+.portfolio {
+  width: 900px;
+  margin: 0 auto;
+}
+.portfolio-item {
+  width: 280px;
+  height: 400px;
+  float: left;
+  margin-top: 60px;
+  margin-right: 20px;
+  position: relative;
+  -webkit-perspective: 500;
+}
+.portfolio-bg {
+  box-shadow: 5px 5px 18px;
+  border-radius: 10px;
+  transform: rotateY(30deg);
+  transition: transform 0.5s ease;
+  width: 100%;
+}
+
+.portfolio-bg {
+  height: 400px;
+}
+
+.portfolio-item:hover .portfolio-bg {
+  transform: rotateY(0deg);
+}
+.portfolio-item:hover .portfolio-description {
+  transform: rotateY(0deg) translateZ(0px);
+}
+.portfolio-description {
+  border-radius: 10px;
+  background-color: #1f1f1f;
+  color: #fff;
+  font-size: 20px;
+  width: 190px;
+  padding: 20px;
+  position: absolute;
+  top: 220px;
+  left: 35px;
+  box-shadow: 0 0 10px #000;
+  transform: rotateY(30deg) translateZ(60px);
+  transition: 0.5s ease;
+  text-align: center;
+  height: 200px;
+  overflow: hidden;
+}
+
+.portfolio-description h4 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.portfolio-description p {
+  font-size: 16px;
+  line-height: 25px;
+}
+
+h1{
+  background-color: aliceblue;
+  width: max-content;
+  padding: 10px;
+  text-align: center;
+  margin-left: 45%;
+  border-radius: 10px;
+}
